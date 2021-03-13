@@ -1,6 +1,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    box-sizing: border-box;
   }
 header h1{
     
@@ -13,15 +14,16 @@ header h1{
     color:#051f29;
 }header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color:#051f29;
     padding-bottom: 15px;
 }
+
 header section{
     margin-top: 30px;
     margin-right: 70px;
     display: flex;
-    
 }
 header h2{
     margin-right: 10px;
@@ -38,35 +40,116 @@ header section h2 a{
 }
 .about{
     display: flex;
-    justify-content: space-between;
-    margin-left: 190px;
+    justify-content: space-around;
+    
 }
 .work{
     display: flex;
-    justify-content: space-between;
-    margin-left: 200px;}
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
 .contact{
     display: flex;
-    justify-content: space-between;
-    margin-left: 150px;
-}.resume{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 150px;
+    justify-content: space-around;
+    
 }
+.resume{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
 .mainBody p{
     margin-right: 100px;
     margin-bottom: 150px;
     margin-top: 110px;
     margin-left: 70px;
+    flex: 0 90%;
+    color: #266680;
+    
 }
 .mainBody h2{
-    margin-top: 100px;
     
-    color: #37819e;
+    margin-top: 100px;
+    color: #266680;
     font-size: 50px;
-    width: min-content;
     text-align: right;
-    border-right: #37819e solid 3px;
+    border-right: #266680 solid 4px;
     padding-right: 15px;
+    flex: 0 20%;
 }
+.imageBlock {
+    
+    background-image:url("./02-hero-bg.jpg");
+    background-color: rgba(74, 176, 216, 0.308);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end;
+    
+}
+
+.imageBlock h3{
+    font-size: 30px;
+    background-color: #34c9eb;
+    color:#051f29;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+.insideWork{
+    background-image: url("./02-portfolio-4.jpg");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    border: 5px solid;
+    border-color: rgb(74, 176, 216);
+    margin-top: 110px;
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+.surf{
+    background-color: rgb(74, 176, 216);
+    margin-bottom: 20px;
+}
+.led{
+    background-image: url("./02-portfolio-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25%;}
+.cal{
+    background-image: url("./02-portfolio-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25%;}
+.pas{
+    background-image: url("./02-portfolio-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25%;}
+.runBuddy{
+    background-image: url("./02-run-buddy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25%;
+}
+.insideClass{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+.insideClass h3{
+    margin-right: 200px;
+    font-size: 20px;
+}
+.insideClass a{
+    color: #266680;
+    text-decoration: none;
+}
+
