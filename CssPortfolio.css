@@ -29,29 +29,160 @@ header h2{
     margin-right: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    border-bottom: 4px solid;
-    border-color: #34c9eb;
-    color: #34c9eb;
     font-size: 20px;
 }
 header section h2 a{
+    text-decoration: none;
     color: #34c9eb;
-    text-decoration : none;
+    border-width: 0 0 4px;
+    border-style: solid;
 }
 .about{
+
     display: flex;
-    justify-content: space-around;
     
 }
-.work{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+.about h2{
+    flex-basis: 20%;
 }
+.about p{
+    
+    flex-basis: 80%;
+}
+
+.work{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+
+.work h2{
+    
+    flex-basis: 18%;
+    
+    
+}
+.workRow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    
+}
+
+/*/////////////////////////////*/    
+
+.surf{
+    margin-bottom: 20px;
+    background-image: url("./02-portfolio-4.jpg");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    border: 5px solid;
+    border-color: rgb(74, 176, 216);
+    margin-top: 110px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    flex-basis: 90%;
+}
+h3{
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+h4{
+    font-size: 15px;
+}
+.backDiv{
+    background-color: rgb(74, 176, 216);
+    display: flex;
+    align-items: flex-end;
+    margin-top: 200px;
+    padding-right: 10px;
+    align-items:center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:flex-end;
+    align-items:flex-start;
+    padding-top: 7px;
+}
+.backDivSub{
+    background-color: rgb(74, 176, 216);
+    display: flex;
+    align-items: flex-end;
+    margin-top: 80px;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:flex-end;
+    align-items:flex-start;
+
+}
+
+.led{
+    
+    display: flex;
+    background-image: url("./02-portfolio-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 43.5%;
+    margin: 25px 10px;
+    margin-left: 40px;
+    border: 5px solid;
+    border-color: rgb(74, 176, 216);
+}
+.cal{
+    display: flex;
+    background-image: url("./02-portfolio-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 43.5%;
+    margin: 25px 10px;
+    margin-left: 40px;
+    border: 5px solid;
+    border-color: rgb(74, 176, 216);
+}
+.pas{
+    display: flex;
+    background-image: url("./02-portfolio-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 43.5%;
+    margin: 25px 10px;
+    margin-left: 40px;
+    border: 5px solid;
+    border-color: rgb(74, 176, 216);
+}
+
+.runBuddy{
+    display: flex;
+    background-image: url("./02-run-buddy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 43.5%;
+    margin: 25px 10px;
+    margin-left: 40px;
+    border: 5px solid;
+    border-color: rgb(74, 176, 216);
+}
+/*//////////////////////////*/
+
 .contact{
     display: flex;
     justify-content: space-around;
     
+}
+.contact h2{
+    flex: .75;
+}
+.contact section{
+    flex: 3.5;
 }
 .resume{
     display: flex;
@@ -59,16 +190,15 @@ header section h2 a{
     
 }
 
-.mainBody p{
+.container-1 p{
     margin-right: 100px;
     margin-bottom: 150px;
     margin-top: 110px;
     margin-left: 70px;
-    flex: 0 90%;
     color: #266680;
     
 }
-.mainBody h2{
+.container-1 h2{
     
     margin-top: 100px;
     color: #266680;
@@ -76,7 +206,7 @@ header section h2 a{
     text-align: right;
     border-right: #266680 solid 4px;
     padding-right: 15px;
-    flex: 0 20%;
+    
 }
 .imageBlock {
     
@@ -87,8 +217,8 @@ header section h2 a{
     display: flex;
     align-items: flex-end;
     justify-content:flex-end;
-    
 }
+
 
 .imageBlock h3{
     font-size: 30px;
@@ -98,58 +228,35 @@ header section h2 a{
     margin-bottom: 25px;
     padding: 10px 20px;
 }
-.insideWork{
-    background-image: url("./02-portfolio-4.jpg");
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    border: 5px solid;
-    border-color: rgb(74, 176, 216);
-    margin-top: 110px;
-    margin-left: 30px;
-    margin-right: 100px;
-    margin-bottom: 10px;
-}
-.surf{
-    background-color: rgb(74, 176, 216);
-    margin-bottom: 20px;
-}
-.led{
-    background-image: url("./02-portfolio-1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25%;}
-.cal{
-    background-image: url("./02-portfolio-2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25%;}
-.pas{
-    background-image: url("./02-portfolio-3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25%;}
-.runBuddy{
-    background-image: url("./02-run-buddy.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25%;
-}
+
 .insideClass{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 120px;
+    flex-wrap: wrap;
+    
 }
 .insideClass h3{
-    margin-right: 200px;
+    margin-left: 125px;
+    margin-right: 150px;
     font-size: 20px;
 }
 .insideClass a{
     color: #266680;
     text-decoration: none;
+    border-width: 0 0 3px;
+    border-style: solid;
 }
 
+.resume{
+    display:wrap;
+    flex-wrap: wrap;
+    }
+    .resume h2{
+        flex: .75;
+    }
+.resume p{
+        flex: 3.05;
+        margin-bottom: 50px;
+        
+    }
