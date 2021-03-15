@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
   }
+  /*header stuff*/
 header h1{
     
     margin-top: 10px;
@@ -37,6 +38,52 @@ header section h2 a{
     border-width: 0 0 4px;
     border-style: solid;
 }
+
+
+/*end header stuff*/
+/*important*/
+.container-1 p{
+    margin-right: 100px;
+    margin-bottom: 150px;
+    margin-top: 110px;
+    margin-left: 70px;
+    color: #266680;
+    
+}
+.container-1 h2{
+    
+    margin-top: 100px;
+    color: #266680;
+    font-size: 50px;
+    text-align: right;
+    border-right: #266680 solid 4px;
+    padding-right: 15px;
+    
+}
+/*hero*/
+.imageBlock {
+    
+    background-image:url("./02-hero-bg.jpg");
+    background-color: rgba(74, 176, 216, 0.308);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end;
+}
+
+
+.imageBlock h3{
+    font-size: 30px;
+    background-color: #34c9eb;
+    color:#051f29;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+/*hero end*/
+/*about me*/
+
 .about{
 
     display: flex;
@@ -56,6 +103,7 @@ header section h2 a{
     border: 5px solid;
     border-color: rgb(74, 176, 216);
 }
+/*end about me*/
 
 /*hover*/
 .surf:hover{
@@ -73,8 +121,9 @@ header section h2 a{
 .runBuddy:hover{
     opacity: 0.5;   
 }
+/*end hover*/
 
-
+/*begin work example*/
 .work{
     
     display: flex;
@@ -110,7 +159,10 @@ header section h2 a{
     margin-left: 40px;
     flex-basis: 90%;
 }
-
+.surf a{
+    color:#051f29;
+    text-decoration: none;
+}
 h3{
     font-size: 25px;
     margin-bottom: 3px;
@@ -194,8 +246,10 @@ h4{
     border: 5px solid;
     border-color: rgb(74, 176, 216);
 }
+/*end work stuff*/
 /*//////////////////////////*/
 
+/*begin contact*/
 .contact{
     display: flex;
     justify-content: space-around;
@@ -207,51 +261,6 @@ h4{
 .contact section{
     flex: 3.5;
 }
-.resume{
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-.container-1 p{
-    margin-right: 100px;
-    margin-bottom: 150px;
-    margin-top: 110px;
-    margin-left: 70px;
-    color: #266680;
-    
-}
-.container-1 h2{
-    
-    margin-top: 100px;
-    color: #266680;
-    font-size: 50px;
-    text-align: right;
-    border-right: #266680 solid 4px;
-    padding-right: 15px;
-    
-}
-.imageBlock {
-    
-    background-image:url("./02-hero-bg.jpg");
-    background-color: rgba(74, 176, 216, 0.308);
-    height: 250px;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content:flex-end;
-}
-
-
-.imageBlock h3{
-    font-size: 30px;
-    background-color: #34c9eb;
-    color:#051f29;
-    margin-right: 100px;
-    margin-bottom: 25px;
-    padding: 10px 20px;
-}
-
 .insideClass{
     display: flex;
     justify-content: flex-end;
@@ -270,12 +279,15 @@ h4{
     border-width: 0 0 3px;
     border-style: solid;
 }
+/*end contact stuff*/
+/*resume*/
 
 .resume{
-    display:wrap;
+    display:flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     }
-    .resume h2{
+.resume h2{
         flex: .75;
     }
 .resume p{
@@ -283,22 +295,21 @@ h4{
         margin-bottom: 50px;
         
     }
-.surf a{
-        color:#051f29;
-        text-decoration: none;
-    }
-    footer p{
+/*end resume*/
+footer p{
         color:white;
         margin-bottom: 10px;
     }
-/*    @media screen and (max-width: 980px) {
-       {
-       }
-    }
 
-*/
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    header section{
+        text-align: center;
+        line-height: 1.5;
+        margin: auto;
+        margin-top: 10px;
+        
+    }
     .about {
         flex-wrap: wrap;
         justify-content: center;
@@ -316,18 +327,8 @@ h4{
         width: 200px;
         margin-top: 5px;
     }
-    header section{
-        text-align: center;
-        line-height: 1.5;
-        margin: auto;
-        margin-top: 10px;
-        
-    }
-}
-.insideClass h3{
-    line-height: 1.2;
-}
-.surf{
+.surf
+{
     flex-basis: 70%;
     
  }
@@ -354,29 +355,39 @@ h4{
     font-size: 40px;
     margin-left: 60px;
 }
-.contact h2{
-    font-size: 40px;
-    margin-left: 55px;
+.insideClass h3{
+    line-height: 1.2;
 }
+
 .resume h2{
     font-size: 40px;
     margin-left: 50px;
 }
-
+}
 
 
 
  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
  @media screen and (max-width: 575px) {
-       
+    header{
+        width:110%;
+    }    
+    header section{
+        text-align: center;
+        line-height: 1.5;
+        margin: auto;
+        margin-top: 10px;
+        
+    }
+    .imageBlock{
+        width:110%;
+    }
     .about h2{
         font-size: 30px;
         margin-left: 60px;
     }
     .about {
         flex-wrap: wrap;
-        
-        
         
     }
     .about p{
@@ -395,16 +406,12 @@ h4{
     }
     .work h2{
         font-size: 25px;
-        margin-left: 10px;
-       
-    
+        margin-left: 10px; 
     }
     
     .cal{
         flex-basis: 31%;
     }
-    
-    
     .pas{
         flex-basis: 31%;
     }
@@ -424,19 +431,7 @@ h4{
             border-width: 0 0 2px;
             
         }
-    header{
-        width:110%;
-    }    
-    header section{
-        text-align: center;
-        line-height: 1.5;
-        margin: auto;
-        margin-top: 10px;
-        
-    }
-    .imageBlock{
-        width:110%;
-    }
+    
     .insideClass h3{
         line-height: 1.2;
     }
