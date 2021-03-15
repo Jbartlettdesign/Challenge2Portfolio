@@ -43,22 +43,44 @@ header section h2 a{
     
 }
 .about h2{
-    flex-basis: 20%;
+    flex-basis: 18.5%;
 }
 .about p{
     
-    flex-basis: 80%;
+    flex-basis: 40%;
 }
+.about img{
+    margin-top: 60px;
+    width: 20%;
+    height: 20%;
+    border: 5px solid;
+    border-color: rgb(74, 176, 216);
+}
+
+/*hover*/
+.surf:hover{
+    opacity: 0.5;    
+}
+.led:hover{
+    opacity: 0.5;   
+}
+.pas:hover{
+    opacity: 0.5;   
+}
+.cal:hover{  
+    opacity: 0.5;
+}
+.runBuddy:hover{
+    opacity: 0.5;   
+}
+
 
 .work{
     
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-    
 }
-
 .work h2{
     
     flex-basis: 18%;
@@ -88,6 +110,7 @@ header section h2 a{
     margin-left: 40px;
     flex-basis: 90%;
 }
+
 h3{
     font-size: 25px;
     margin-bottom: 3px;
@@ -260,3 +283,161 @@ h4{
         margin-bottom: 50px;
         
     }
+.surf a{
+        color:#051f29;
+        text-decoration: none;
+    }
+    footer p{
+        color:white;
+        margin-bottom: 10px;
+    }
+/*    @media screen and (max-width: 980px) {
+       {
+       }
+    }
+
+*/
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about h2{
+        font-size: 40px;
+    }
+    .about p{
+        margin-bottom:7px;
+    }
+    .about img{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 200px;
+        margin-top: 5px;
+    }
+    header section{
+        text-align: center;
+        line-height: 1.5;
+        margin: auto;
+        margin-top: 10px;
+        
+    }
+}
+.insideClass h3{
+    line-height: 1.2;
+}
+.surf{
+    flex-basis: 70%;
+    
+ }
+ .work h2{
+     font-size: 40px;
+     margin-left: 10px;
+ }
+ 
+ .cal{
+     flex-basis: 31%;
+ }
+ 
+ 
+ .pas{
+     flex-basis: 31%;
+ }
+ .led{
+     flex-basis: 31%;
+ }
+ .runBuddy{
+     flex-basis: 31%;
+ }
+ .contact h2{
+    font-size: 40px;
+    margin-left: 60px;
+}
+.contact h2{
+    font-size: 40px;
+    margin-left: 55px;
+}
+.resume h2{
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+
+
+
+ /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+ @media screen and (max-width: 575px) {
+       
+    .about h2{
+        font-size: 30px;
+        margin-left: 60px;
+    }
+    .about {
+        flex-wrap: wrap;
+        
+        
+        
+    }
+    .about p{
+        margin-bottom:7px;
+    }
+    .about img{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 200px;
+        margin-top: 5px;
+    }
+    .surf{
+       flex-basis: 70%;
+       
+    }
+    .work h2{
+        font-size: 25px;
+        margin-left: 10px;
+       
+    
+    }
+    
+    .cal{
+        flex-basis: 31%;
+    }
+    
+    
+    .pas{
+        flex-basis: 31%;
+    }
+    .led{
+        flex-basis: 31%;
+    }
+    .runBuddy{
+        flex-basis: 31%;
+    }
+    .contact h2{
+        font-size: 30px;
+        margin-left: 60px;
+    }
+    .resume h2{font-size: 30px;
+        margin-left: 30px;}
+        header section h2 a{
+            border-width: 0 0 2px;
+            
+        }
+    header{
+        width:110%;
+    }    
+    header section{
+        text-align: center;
+        line-height: 1.5;
+        margin: auto;
+        margin-top: 10px;
+        
+    }
+    .imageBlock{
+        width:110%;
+    }
+    .insideClass h3{
+        line-height: 1.2;
+    }
+}
